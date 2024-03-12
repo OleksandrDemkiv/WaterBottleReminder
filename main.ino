@@ -92,7 +92,8 @@ void sleepMode() {
   clearScreen();
   while (digitalRead(RED_BTN) == HIGH && 
         digitalRead(BLUE_BTN) == HIGH && 
-        scale.get_units() == lastMeasure) {}
+        scale.get_units() == lastMeasure &&
+        !timer.justFinished()) {}
   
   if (scale.get_units() != lastMeasure) measureAfter(); // ask for red btn to record measure if woke on lift
 }
