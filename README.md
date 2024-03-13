@@ -14,7 +14,7 @@ This is a simple reminder to drink water regularly with a lot of functions for b
 ## Files
 
 In this branch you can find only .ino files, which will be just taken as one file in Arduino IDE when uploading. The only thing you need is to add required libraries.
-*this is why there is file named "songz", it's just to have it compiled in proper way.
+*this is why the files are named wierdly, this is just the way how it should be executed
 
 ## Required libraries 
 
