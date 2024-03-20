@@ -93,7 +93,7 @@ void loop() {
 
   // when two buttons are pressed
   if (digitalRead(RED_BTN) == LOW && digitalRead(BLUE_BTN) == LOW) {
-    delay(100);
+    delay(500);
     menu();
   }
 }
