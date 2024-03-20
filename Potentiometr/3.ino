@@ -61,7 +61,7 @@ void timerSetup() {
   timer.stop();
   long newTime = 0;
   
-  while(digitalRead(RED_BTN) == HIGH || digitalRead(BLUE_BTN) == HIGH || newTime == 0) {
+  while(digitalRead(RED_BTN) == HIGH || digitalRead(BLUE_BTN) == HIGH) {
     clearScreen();
 
     // print current time and new
@@ -88,12 +88,16 @@ void timerSetup() {
     delay(100); // smooth update
   }
 
-  timerTime = newTime * 60000; // new timer time is mins but in ms
+  if(time != 0) timerTime = newTime * 60000; // new timer time is mins but in ms
   timer.start(timerTime); // start the timer on the time
 }
 
 void doNotDisturb() {
   int pos = 0; // to calculate if odd/even and choose is in/off
+
+  if(buzzerState)
+      pos = 0;
+  else pos = 1;
   
   while(digitalRead(RED_BTN) == HIGH) {
     clearScreen();
