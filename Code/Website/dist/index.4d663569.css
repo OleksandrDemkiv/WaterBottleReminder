@@ -1,0 +1,155 @@
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-height: 1400px;
+}
+
+header, section {
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+header {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ccc;
+}
+
+section {
+  justify-content: center;
+  gap: 5vw;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+header p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+label {
+  color: #333;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.no_data {
+  color: #666;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 50px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+section div {
+  height: 600px;
+}
+
+.chart {
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  margin-top: 20px;
+  display: flex;
+}
+
+.chart canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.total {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.total h2 {
+  color: #333;
+  margin-top: 20px;
+  font-size: 55px;
+}
+
+.total span {
+  color: #fff;
+  background-color: #378d8d;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 15vw;
+  padding: 20px;
+  font-size: 50px;
+  display: flex;
+}
+
+footer {
+  text-align: center;
+  background-color: #f2f2f2;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+footer .copyright {
+  color: #888;
+  font-size: 14px;
+}
+
+@media screen and (width <= 1500px) {
+  section div {
+    height: 400px;
+  }
+}
+
+@media screen and (width <= 1100px) {
+  header {
+    flex-direction: column;
+  }
+
+  section {
+    flex-direction: column-reverse;
+    height: 900px;
+  }
+
+  section .chart {
+    width: 100vw;
+    height: 300px;
+  }
+
+  .total span {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  footer {
+    position: relative;
+  }
+}
+/*# sourceMappingURL=index.4d663569.css.map */

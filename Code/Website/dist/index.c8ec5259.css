@@ -1,0 +1,101 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+select {
+  appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  z-index: 1;
+  background-color: #0000;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 0;
+  padding: 0 1em 0 0;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  border: 1px solid var(--select-border);
+  cursor: pointer;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  border-radius: .25em;
+  grid-template-areas: "select";
+  align-items: center;
+  min-width: 15ch;
+  max-width: 30ch;
+  padding: .25em .5em;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  display: grid;
+  position: relative;
+}
+
+.select select, .select:after {
+  grid-area: select;
+}
+
+.select:not(.select--multiple):after {
+  content: "";
+  background-color: var(--select-arrow);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  justify-self: end;
+  width: .8em;
+  height: .5em;
+}
+
+select:focus + .focus {
+  border: 2px solid var(--select-focus);
+  border-radius: inherit;
+  position: absolute;
+  inset: -1px;
+}
+
+select[multiple] {
+  height: 6rem;
+  padding-right: 0;
+}
+
+select[multiple] option {
+  white-space: normal;
+  outline-color: var(--select-focus);
+}
+
+.select--disabled {
+  cursor: not-allowed;
+  background-color: #eee;
+  background-image: linear-gradient(to top, #ddd, #eee 33%);
+}
+
+label {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.select + label {
+  margin-top: 2rem;
+}
+
+body {
+  grid-gap: .5rem;
+  background-color: #e9f2fd;
+  place-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+  font-family: "Baloo 2", sans-serif;
+  display: grid;
+}
+/*# sourceMappingURL=index.c8ec5259.css.map */
