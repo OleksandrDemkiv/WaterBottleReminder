@@ -64,7 +64,7 @@ At the startup the program will as you to clean the platform and then put weight
 ## Menu mode
 
 - Press *two buttons* together to enter it.
-- The options are: Timer setup,  Do not disturb,  Change song,  Change color.
+- The options are: Timer setup,  Do not disturb,  Change color.
 - To navigate: use *blue button* to go to next option, or use *red button* to choose an option.
 - To exit press *two buttons* at the same time.
 
@@ -74,21 +74,10 @@ At the startup the program will as you to clean the platform and then put weight
 	- Use *blue button* to add 30 minutes;
 	- Use *red button* to minus 30 minutes;
 	- Use *two buttons* to exit and save the result;
-	**Note** if you have entered zero, timer time will stay the same as it was;
 ---
 - Do not disturb
 	- Use *blue button* to change between on and off;
 	- Use *red button* to save and exit;
----
-- Change song
-	- Use *blue button* to navigate between sections;
-	- Use *red button* to choose a section;
-	- Use *two buttons* to exit;
-
-- In section menu
-	- Use *blue button* to navigate between songs;
-	- Use *red button* to choose a song;
-
 ---
 
 - Change color
