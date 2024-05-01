@@ -1,6 +1,7 @@
 # Water bottle reminder
 
 This is a simple reminder to drink water regularly with a lot of functions for better user experience.
+(This README is only about usage of arduino, but we have also localhosted API and Website which you can read about in our report)
 
 ## Required components
 
